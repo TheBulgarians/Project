@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Q1 Project</title>
+
+    <style>
+
+        body {
+            background-color: #eee8f7;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #5b4575;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        nav {
+            background-color: #3f3152;
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #5b4575;
+            text-align: center;
+        }
+
+        h3 {
+            color: #5b4575;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        a {
+            color: #5b4575;
+        }
+
+        ul, ol, dl {
+            background-color: #f8f6fb;
+            padding: 20px 40px;
+            border-radius: 8px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #5b4575;
+        }
+
+        dd {
+            margin-bottom: 10px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f8f6fb;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        input, textarea, select {
+            padding: 7px;
+            margin: 5px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 8px 20px;
+            background-color: #5b4575;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #3f3152;
+        }
+
+        footer {
+            background-color: #5b4575;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            section {
+                width: 90%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWxlEfGK7l5jWlcWPmuzUDIMz-Vj5PWwr6Jm7Tsa1vg&s=10"
+        alt="Agatha and Han's Logo">
+
+        <h1>Hi, we're Agatha and Han.</h1>
+
+        <p>
+            Welcome to our personal portfolio.
+        </p>
+
+    </header>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#works">Our Works</a>
+
+        <a href="#interests">Our Interests</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- Home -->
+
+    <section id="home" class="profile">
+
+        <h2>Welcome!</h2>
+
+        <p>
+            Hello! We're Agatha Palisoc and Seungho Han.
+            We are students from 9-Ruby. This website is our
+            personal portfolio where you can learn more about
+            us, our hobbies, interests, and projects.
+        </p>
+
+    </section>
+
+
+    <!-- About Us -->
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            We are students from 9-Ruby who enjoy walking around
+            school, playing games, and learning.
+        </p>
+
+
+        <h3>Agatha Palisoc</h3>
+
+        <ul>
+
+            <li>Name: Agatha Palisoc</li>
+
+            <li>Section: 9-Ruby</li>
+
+            <li>Instruments: Saxophone and trombone</li>
+
+            <li>Interests: Roblox, music, and reading</li>
+
+        </ul>
+
+
+        <h3>Seungho Han</h3>
+
+        <ul>
+
+            <li>Name: Seungho Han</li>
+
+            <li>Section: 9-Ruby</li>
+
+            <li>Instruments: Cello and Piano</li>
+
+            <li>Interests: Science, technology, and games</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Our Works -->
+
+    <section id="works">
+
+        <h2>Our Works</h2>
+
+        <p>
+            Here are some projects that we have worked on.
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- Seungho's Project -->
+
+            <div class="card">
+
+                <img src="Screenshot 2026-10-03 003701.png"
+                alt="Seungho's movie rating project">
+
+                <h3>Rate a Movie - Seungho Han</h3>
+
+                <p>
+                    I was tasked to create a simple website
+                    that allowed users to rate movies.
+                </p>
+
+                <a href="https://storage.googleapis.com/oa_disk001/oblaspinas/69/classfeed/3651/submissions/1788318775-1027.html"
+                target="_blank">
+
+                    View Project
+
+                </a>
+
+            </div>
+
+
+            <!-- Agatha's Project -->
+
+            <div class="card">
+                <img src="Screenshot 2026-10-03 031148.png" alt="Agatha's My Favorites project">
+                <h3>My Favorites - Agatha Palisoc</h3>
+
+                <p>
+                    This project showcases my favorite movies,
+                    food, and people.
+                </p>
+
+                <a href="https://github.com/TheBulgarians/PRACTICE1"
+                target="_blank">
+
+                    View Project
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <h3>Our Accomplishments</h3>
+
+        <ol>
+
+            <li>Created personal website projects</li>
+
+            <li>Worked together on a portfolio</li>
+
+            <li>Learned more about HTML and CSS</li>
+
+        </ol>
+
+
+        <h3>Skills and Descriptions</h3>
+
+        <dl>
+
+            <dt>Creativity</dt>
+
+            <dd>
+                Our ability to develop ideas and express
+                ourselves through our projects.
+            </dd>
+
+
+            <dt>Communication</dt>
+
+            <dd>
+                Our ability to talk freely and directly
+                with others.
+            </dd>
+
+
+            <dt>Problem Solving</dt>
+
+            <dd>
+                Our ability to think critically and find
+                solutions to problems.
+            </dd>
+
+        </dl>
+
+
+        <p>
+
+            <a href="https://github.com/Han2d/Practice-1"
+            target="_blank">
+
+                Visit our previous repositories
+
+            </a>
+
+        </p>
+
+    </section>
+
+
+    <!-- Interests -->
+
+    <section id="interests">
+
+        <h2>Our Hobbies and Interests</h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>Music</h3>
+
+                <p>
+                    Agatha enjoys playing musical instruments,
+                    especially the saxophone and trombone.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Gaming</h3>
+
+                <p>
+                    We enjoy playing games during our free
+                    time, including Roblox BedWars.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Learning</h3>
+
+                <p>
+                    We enjoy learning new things and exploring
+                    different topics that interest us.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Our Goals</h3>
+
+                <p>
+                    We want to be able to create standard
+                    websites.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <h3>Our Favorite Activities</h3>
+
+        <ol>
+
+            <li>Practicing musical instruments</li>
+
+            <li>Playing games with friends</li>
+
+            <li>Learning new things</li>
+
+        </ol>
+
+    </section>
+
+
+    <!-- Contact and Feedback -->
+
+    <section id="contact">
+
+        <h2>Contact and Feedback</h2>
+
+        <p>
+            Feel free to leave a message or share your
+            feedback about our portfolio.
+        </p>
+
+
+        <form>
+
+
+            <p>
+
+                <label for="name">Name:</label><br>
+
+                <input type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name">
+
+            </p>
+
+
+            <p>
+
+                <label for="email">Email:</label><br>
+
+                <input type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email">
+
+            </p>
+
+
+            <p>
+
+                <label for="interest">
+                    What are you interested in?
+                </label><br>
+
+                <input type="text"
+                id="interest"
+                name="interest"
+                placeholder="Your interests">
+
+            </p>
+
+
+            <p>
+
+                <label for="rating">
+                    Rate our portfolio:
+                </label><br>
+
+                <select id="rating" name="rating">
+
+                    <option>5 - Excellent</option>
+
+                    <option>4 - Good</option>
+
+                    <option>3 - Okay</option>
+
+                    <option>2 - Needs Improvement</option>
+
+                    <option>1 - Poor</option>
+
+                </select>
+
+            </p>
+
+
+            <p>
+
+                <label for="feedback">
+                    Feedback:
+                </label><br>
+
+                <textarea
+                id="feedback"
+                name="feedback"
+                rows="5"
+                cols="40"
+                placeholder="Write your feedback here"></textarea>
+
+            </p>
+
+
+            <p>
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </p>
+
+
+        </form>
+
+    </section>
+
+
+    <!-- Thank You -->
+
+    <section>
+
+        <h2>Thank You!</h2>
+
+        <p style="text-align: center; background-color: #5b4575; color: white; padding: 15px; border-radius: 8px;">
+
+            Thank you for visiting our personal portfolio!
+            We hope you enjoyed learning a little about us
+            and our interests.
+
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Agatha Palisoc and Seungho Han |
+            9-Ruby
+        </p>
+
+        <p>
+            Our Personal Portfolio
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
